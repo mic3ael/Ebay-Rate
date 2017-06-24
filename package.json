@@ -4,18 +4,19 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "cd client && npm install && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "ejs": "^2.5.6",
-    "express": "~4.15.2",
+    "express": "~4.15.3",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:mic3ael/ebay-rate.git",
+  "author": "Michael Horojanski <mic3ael@gmail.com>",
+  "license": "MIT"
 }
