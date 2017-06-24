@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import axios from 'axios';
+//import axios from 'axios';
 
-axios.get('/users').then(function(response) {
+/*axios.get('/users').then(function(response) {
   console.log(response);
 }).catch(function(error) {
   console.log(error);
-});
+});*/
 
 class App extends Component {
   render() {
